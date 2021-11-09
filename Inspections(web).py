@@ -178,7 +178,7 @@ minor_columns.append("v_70")
 # Create complete list of column names
 columns = critical_columns + serious_columns + minor_columns
 
-# Create the dataframe values using column names, violation data and inspection_id
+# Create the dataframe 'values' by using column names, violation data and inspection_id
 values = pd.DataFrame(values_data, columns=columns)
 values['inspection_id'] = df_food['inspection_id']
 
@@ -188,7 +188,7 @@ print(values.head())
 
 
 
-# Count violations
+# Create the dataframe 'counts' by counting the number of violations of each category
 counts = pd.DataFrame({
     'critical_count': values[critical_columns].sum(axis=1),
     'serious_count': values[serious_columns].sum(axis=1),
