@@ -1265,6 +1265,7 @@ plotly.offline.plot({'data': [fig1],
                      auto_open=False,
                      filename=('4DPlot.html'))
 
+
 # Convert integers to strings
 def currency(x, pos):
     """The two args are the value and tick position"""
