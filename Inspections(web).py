@@ -836,7 +836,7 @@ data = df_food.loc[:, ['inspection_id', 'license', 'inspection_date', 'results',
 print(data.shape)
 
 
-# Merge with violation data
+# Merge with 'values' and 'counts' dataframes
 data = pd.merge(data, values, on='inspection_id')
 data = pd.merge(data, counts, on='inspection_id')
 print(data.shape)
