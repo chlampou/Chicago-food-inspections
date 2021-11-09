@@ -43,6 +43,7 @@ import shap
 
 
 # (~3mins to run)
+# Import the food inspections dataset
 df_food = pd.read_csv('https://data.cityofchicago.org/resource/4ijn-s7e5.csv?$limit=300000', parse_dates=['inspection_date'])
 print('The df_food before data cleaning')
 print(df_food.head())
