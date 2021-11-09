@@ -1,4 +1,5 @@
 # In order to view the interactive folium plots, 
+# if you use Spyder (Anaconda)
 # first you need to left click to Files,
 # then scroll down until the end
 # and then right click to the file you want to open
