@@ -955,6 +955,7 @@ print(data.shape)
 print(data.columns.values)
 
 
+
 # Critical_found - Previous_critical_found
 plt.figure(figsize=(10,10))
 plt.title('Critical found - Previous critical found')
