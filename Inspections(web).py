@@ -1089,7 +1089,7 @@ matches = venue_matches.append(license_matches, sort=False)
 matches.reset_index(drop=True, inplace=True)
 matches.drop_duplicates(['inspection_id', 'id'], inplace=True)
 
-# Restrict to matches where inspection falls within License_term_start_date and License_term_expiration_date 
+# Restrict to matches where inspection falls within license_term_start_date and license_term_expiration_date 
 matches = matches.loc[matches.inspection_date.between(matches.license_start_date, matches.license_expiration_date)]
 
 # Keep only specific columns
