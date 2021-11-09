@@ -188,7 +188,7 @@ print(values.head())
 
 
 
-# Create the dataframe 'counts' by counting the number of violations of each category
+# Create the dataframe 'counts' by counting the number of violations of each category for each inspection
 counts = pd.DataFrame({
     'critical_count': values[critical_columns].sum(axis=1),
     'serious_count': values[serious_columns].sum(axis=1),
