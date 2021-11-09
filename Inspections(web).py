@@ -793,6 +793,10 @@ print("------------------------------------------------------------")
 
 
 
+
+
+
+
 # Check the type of columns
 print(df_food.dtypes.sort_values())
 lbl = preprocessing.LabelEncoder()
@@ -820,9 +824,6 @@ print(df_food['enc_risk'].head(15))
 df_food['enc_risk']=df_food['enc_risk'].replace({0:1, 1:2, 2:3})
 df_food = df_food.drop('risk', 1)
 df_food.rename(columns={'enc_risk': 'risk'}, inplace=True)
-
-
-
 
 
 
