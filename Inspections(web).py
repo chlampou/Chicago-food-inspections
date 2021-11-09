@@ -152,9 +152,10 @@ print("------------------------------------------------------------")
 
 
 
-print(df_food.iloc[10000].violations)
-# NLP for Violations description (~5mins to run)
 
+
+# NLP for Violations description (~5mins to run)
+print(df_food.iloc[10000].violations)
 
 # Split violations into binary values for each violation
 def split_violations(violations):
