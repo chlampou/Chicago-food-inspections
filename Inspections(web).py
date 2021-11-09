@@ -1000,6 +1000,7 @@ pass_fail_probability = (pass_fail_chart.loc['Post Pass', 'Prior Fail'] /
 pass_fail_chart.loc['Post Pass', :].sum())
 print(str(round(100*pass_fail_probability, 2))+ '% of prior passes resulted in a post fail')
 
+
 # Calculate fines
 data['fines'] = data[critical_columns].sum(axis=1) * 500
 data['fines'] += data[serious_columns].sum(axis=1) * 250
@@ -1008,7 +1009,7 @@ data['fines'] += data[minor_columns].sum(axis=1) * 250
 # Sort by date
 data.sort_values('inspection_date', inplace=True)
 
-# Calculate statistics for license groups
+# Calculate fines for license groups
 def get_fines(group):
     days = (group.iloc[-1].inspection_date - group.iloc[0].inspection_date).days + 1
     years = days / 365.25
@@ -1022,7 +1023,7 @@ def get_fines(group):
         'risk_at_start':risk
     })
 
-# Group by License and apply get_stats_1
+# Group by license and apply get_fines
 fine_stats = data.groupby('license').apply(get_fines).reset_index()
 print(fine_stats.head(20))
 data = pd.merge(data, fine_stats, on='license')
