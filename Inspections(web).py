@@ -5,6 +5,10 @@
 # and then right click to the file you want to open
 # and select Open externally  
 
+# In order to display all the columns in print commands,
+# you must uncomment and run the next 2 lines of code
+#pd.options.display.max_columns = None
+#pd.options.display.max_rows = None
 
 # Import libraries
 import numpy as np
