@@ -1238,10 +1238,11 @@ i3.set_ylabel('')
 i3.set_xlabel('')
 plt.show()
 
-#Set marker properties
+
+# Set marker properties
 markercolor = data['zip']
 
-#Make Plotly figure
+# Make Plotly figure
 fig1 = go.Scatter3d(x=data['sanitation_frequency'],
                     y=data['garbage_frequency'],
                     z=data['rodent_frequency'],
@@ -1253,12 +1254,12 @@ fig1 = go.Scatter3d(x=data['sanitation_frequency'],
                     line=dict (width=0.02),
                     mode='markers')
 
-#Make Plot.ly Layout
+# Make Plotly Layout
 mylayout = go.Layout(scene=dict(xaxis=dict( title='Sanitation frequency'),
                                 yaxis=dict( title='Garbage frequency'),
                                 zaxis=dict(title='Rodent frequency')),)
 
-#Plot and save html
+# Plot and save html
 plotly.offline.plot({'data': [fig1],
                      'layout': mylayout},
                      auto_open=False,
