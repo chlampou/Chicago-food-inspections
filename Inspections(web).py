@@ -182,7 +182,7 @@ columns = critical_columns + serious_columns + minor_columns
 values = pd.DataFrame(values_data, columns=columns)
 values['inspection_id'] = df_food['inspection_id']
 
-# Display values dataframe
+# Display 'values' dataframe
 print('Values has', values.shape)
 print(values.head())
 
@@ -213,7 +213,7 @@ plt.show()
 
 counts = counts.drop('crit_enc', 1) 
 
-# Display counts dataframe
+# Display 'counts' dataframe
 print('Counts has', counts.shape)
 print(counts.head())
 
