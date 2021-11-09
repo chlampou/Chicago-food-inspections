@@ -455,7 +455,7 @@ plt.show()
 
 
 
-# (~5mins to run)
+# Import the business licenses dataset (~5mins to run)
 df_business = pd.read_csv('https://data.cityofchicago.org/resource/r5kz-chrr.csv?$limit=1500000', parse_dates=['license_start_date', 'expiration_date'])
 print('The df_business before data cleaning')
 print(df_business.head())
