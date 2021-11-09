@@ -389,7 +389,6 @@ titles = pd.DataFrame({
     "v_70": "No smoking regulations (70)"
 }, index=[0])
 
-
 # Change the name of columns in value dataframe by the title values dataframe's columns
 titled_values = values.rename(columns=titles.iloc[0])
 
@@ -417,8 +416,8 @@ ax.set_title('Top 10 violations')
 ax.invert_yaxis()
 plt.show()
 
-# In order to display the next image, first you need to downnload and 
-# then save the image from this link: https://prnt.sc/1uc23mb
+# In order to display the next image, first you need to downnload  
+# and save the image from this link: https://prnt.sc/1uc23mb
 # the result must be something like this: https://prnt.sc/1uhg47d
 mask = np.array(Image.open('C:/Users/User/Desktop/Diploma/fast_food.png'))
 
