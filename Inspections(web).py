@@ -1081,7 +1081,7 @@ df_food['street_number'] = df_food.address.apply(get_street_number)
 # Match based on dba_name and street_number
 venue_matches = pd.merge(df_food, df_business, on=['dba_name', 'street_number'])
 
-# Match based on License 
+# Match based on license 
 license_matches = pd.merge(df_food, df_business, on='license')
 
 # Join matches, reset index, drop duplicates
