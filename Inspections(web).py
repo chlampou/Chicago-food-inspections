@@ -454,7 +454,6 @@ plt.show()
 
 
 # (~5mins to run)
-#TODO
 df_business = pd.read_csv('https://data.cityofchicago.org/resource/r5kz-chrr.csv?$limit=1500000', parse_dates=['license_start_date', 'expiration_date'])
 print('The df_business before data cleaning')
 print(df_business.head())
@@ -829,7 +828,6 @@ df_food.rename(columns={'enc_risk': 'risk'}, inplace=True)
 
 
 
-#TODO
 data = df_food.loc[:, ['inspection_id', 'license', 'inspection_date', 'results', 'risk',
                        'zip', 'year', 'month', 'latitude', 'longitude', 'dba_name', 'address']]
 print(data.shape)
@@ -1351,7 +1349,6 @@ plt.show()
 
 
 
-#TODO
 # Machine learning for prediction
 
 
