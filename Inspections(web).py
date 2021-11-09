@@ -305,7 +305,6 @@ print('The maximum value for the latitude is: '+str(max(lats)))
 print('The minimum value for the longitude is: '+str(min(lons)))
 print('The maximum value for the longitude is: '+str(max(lons)))
 
-
 locations = list(zip(lats, lons))
 map1 = folium.Map(location=[37.0902, -95.7129], zoom_start=5)
 FastMarkerCluster(data=locations).add_to(map1)
@@ -318,6 +317,7 @@ inspections_arr = df_food.sample(20000)[['latitude', 'longitude']].values
 # Plot heatmap
 map2.add_child(plugins.HeatMap(inspections_arr.tolist(), radius=10))
 map2.save('map2.html')
+
 
 
 # Health code violations
