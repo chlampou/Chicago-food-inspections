@@ -216,10 +216,12 @@ counts = counts.drop('crit_enc', 1)
 # Display counts dataframe
 print('Counts has', counts.shape)
 print(counts.head())
-print("------------------------------------------------------------")
 
 
 
+
+
+# Plots
 # The distribution of the variable zip
 a=df_food['zip'].plot(kind='hist')
 a.set_title('The distribution of the zip codes')
