@@ -706,7 +706,7 @@ print("------------------------------------------------------------")
 
 
 
-# (~25mins to run)
+# Import the 311 service requests dataset (~30mins to run)
 df_service = pd.read_csv('https://data.cityofchicago.org/resource/v6vf-nfxy.csv?$limit=6000000', parse_dates=['created_date'])
 print('The df_service before data cleaning')
 print(df_service.head())
