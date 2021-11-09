@@ -977,17 +977,18 @@ c=sns.heatmap(pd.crosstab([data.previous_results], [data.critical_found]), squar
             cmap='Spectral', annot=True, fmt='.1f', linewidths=0.5, cbar=False)
 plt.show()
 
+
 # Calculate cross tabulation of results and previous results
 chart = pd.crosstab(data.previous_results, data.results)
-# Make Numpy array of total counts of previous(prior) fails and passes with 
-# the following(post) results
+# Make Numpy array of total counts of previous(prior) fails and passes with the following(post) results 
 chart_arr = np.array(chart)
-# Create new dataframe from Numpy array to clearly dispay prior and 
+# Create new dataframe from Numpy array to clearly display prior and 
 # post results
 pass_fail_chart = pd.DataFrame({'Prior Fail':chart_arr[:,0],
                                 'Prior Pass':chart_arr[:,1]})
 pass_fail_chart.index = pass_fail_chart.index.rename("")
 pass_fail_chart = pass_fail_chart.rename(index={0:'Post Fail',1:'Post Pass'})
+
 
 # The percentage of how many prior fails resulted in post fails
 fail_fail_probability = (pass_fail_chart.loc['Post Fail', 'Prior Fail'] /
