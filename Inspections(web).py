@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 24 13:32:48 2021
-
-@author: User
-"""
-
 # In order to view the interactive folium plots, 
 # first you need to left click to Files,
 # then scroll down until the end
