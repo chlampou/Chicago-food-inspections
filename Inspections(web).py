@@ -582,7 +582,7 @@ print("------------------------------------------------------------")
 
 
 
-# (~2mins to run)
+# Import the sanitation complaints dataset (~2mins to run)
 df_sanitation = pd.read_csv('https://data.cityofchicago.org/resource/me59-5fac.csv?$limit=250000', parse_dates=['creation_date'])
 print('The df_sanitation before data cleaning')
 print(df_sanitation.head())
