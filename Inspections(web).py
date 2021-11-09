@@ -1191,6 +1191,8 @@ print("------------------------------------------------------------")
 
 
 
+
+
 # Criticals found per year
 g1=data.groupby('year').critical_found.value_counts().unstack().plot.barh()
 g1.set_title('Criticals found by year')
