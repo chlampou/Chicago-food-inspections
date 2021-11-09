@@ -847,7 +847,6 @@ print(data.dtypes.sort_values())
 print(data.shape)
 print(data.columns.values)
 data['garbage_frequency'] = data['garbage_frequency'].fillna(0)
-print(data.isnull().sum().sort_values(ascending=False))
 
 # Merge with df_sanitation
 data=pd.merge(data, df_sanitation, how='left', on=['zip', 'year', 'month'])
@@ -855,7 +854,6 @@ print(data.dtypes.sort_values())
 print(data.shape)
 print(data.columns.values)
 data['sanitation_frequency'] = data['sanitation_frequency'].fillna(0)
-print(data.isnull().sum().sort_values(ascending=False))
 
 # Merge with df_rodent
 data=pd.merge(data, df_rodent, how='left', on=['zip', 'year', 'month'])
@@ -863,7 +861,6 @@ print(data.dtypes.sort_values())
 print(data.shape)
 print(data.columns.values)
 data['rodent_frequency'] = data['rodent_frequency'].fillna(0)
-print(data.isnull().sum().sort_values(ascending=False))
 
 # Merge with df_service
 data=pd.merge(data, df_service, how='left', on=['zip', 'year', 'month'])
