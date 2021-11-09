@@ -644,7 +644,7 @@ print("------------------------------------------------------------")
 
 
 
-# (~2mins to run)
+# Import the rodents complaints dataset (~2mins to run)
 df_rodent = pd.read_csv('https://data.cityofchicago.org/resource/97t6-zrhs.csv?$limit=450000', parse_dates=['creation_date'])
 print('The df_rodent before data cleaning')
 print(df_rodent.head())
