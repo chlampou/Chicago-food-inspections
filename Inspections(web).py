@@ -519,7 +519,7 @@ print("------------------------------------------------------------")
 
 
 
-# (~2mins to run)
+# Import the garbage complaints dataset (~2mins to run)
 df_garbage = pd.read_csv('https://data.cityofchicago.org/resource/9ksk-na4q.csv?$limit=500000', parse_dates=['creation_date'])
 print('The df_garbage before data cleaning')
 print(df_garbage.head())
