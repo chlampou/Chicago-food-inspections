@@ -1,6 +1,6 @@
 # Chicago-food-inspections-2021
 
-This notebook constitutes a research on predictive analytics concerning food inspections in the city of Chicago. It is an analysis of data from previous food inspections with the aim of locating critical violations of the health code. 
+This code constitutes a research on predictive analytics concerning food inspections in the city of Chicago. It is an analysis of data from previous food inspections with the aim of locating critical violations of the health code. 
 
 The main target, is to investigate whether there was a critical violation in food inspections of each facility. The aforementioned problem lies within the problems of classification as the dependent variable has two values and receives the value of 1 (if there is at least one critical violation) or 0 (if there is no critical violation). 
 
